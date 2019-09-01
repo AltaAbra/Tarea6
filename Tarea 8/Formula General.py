@@ -1,5 +1,5 @@
 
-def chicharronera(a, b, c):
+def FormulaGeneral(a, b, c):
     d  = b * b - 4 * a * c #discriminante
     if d >= 0: #raices reales
         return ((-b + (d ** .5)) / (2.0 / a),
@@ -10,7 +10,7 @@ def chicharronera(a, b, c):
                 complex(-b, -(d ** .5)) / (2.0 * a))
 
 #pruebas
-x1, x2 = chicharronera(10, 10, 6)
+x1, x2 = FormulaGeneral(15, 63, 7)
 if x1 == x2:
     print ("Raices reales e iguales: x1 = x2 = %.2f" % x1)
 elif type(x1) == complex:
